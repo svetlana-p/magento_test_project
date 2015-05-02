@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Svp_SortedMenu>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Svp_SortedMenu>
+    </modules>
+</config>
