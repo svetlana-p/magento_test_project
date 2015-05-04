@@ -23,7 +23,7 @@
 <config>
     <modules>
         <Svp_SortedMenu>
-            <version>0.1.0</version>
+            <version>0.1.1</version>
         </Svp_SortedMenu>
     </modules>
     <frontend>
@@ -40,6 +40,7 @@
             <svp_sortedmenu_setup>
                 <setup>
                     <module>Svp_SortedMenu</module>
+                    <class>Svp_SortedMenu_Model_Setup</class>
                 </setup>
             </svp_sortedmenu_setup>
         </resources>
