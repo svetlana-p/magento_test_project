@@ -40,7 +40,6 @@
             <svp_sortedmenu_setup>
                 <setup>
                     <module>Svp_SortedMenu</module>
-                    <class>Svp_SortedMenu_Model_Setup</class>
                 </setup>
             </svp_sortedmenu_setup>
         </resources>

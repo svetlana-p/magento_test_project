@@ -1,2 +1,8 @@
 <?xml version="1.0"?>
-<layout version="0.1.0" />
+<layout version="0.1.0">
+    <default>
+        <reference name="head">
+            <action method="addItem"><type>skin_css</type><name>css/styles.css</name><params/><if><![CDATA[<!--[if (gte IE 9) | (IEMobile)]><!-->]]></if></action>
+        </reference>
+    </default>
+</layout>

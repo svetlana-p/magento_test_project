@@ -14,7 +14,7 @@ module.exports = function (grunt) {
             },
             // Listening files to reload resource (for static resources like css/images/js) or whole page
             reload: {
-                files: ['skin/frontend/svp/sortedmenu/css/project.css'],
+                files: ['skin/frontend/svp/sortedmenu/css/styles.css'],
                 options: {
                     livereload: true
                 }
@@ -28,13 +28,13 @@ module.exports = function (grunt) {
             dev: {
                 expand: true,
                 flatten: true,
-                src: 'skin/frontend/svp/sortedmenu/css/project.css',
+                src: 'skin/frontend/svp/sortedmenu/css/styles.css',
                 dest: 'skin/frontend/svp/sortedmenu/css/'
             }
         }
     });
 
-    grunt.loadTasks('grunt-contrib-compass');
-    grunt.loadTasks('grunt-autoprefixer');
-    grunt.loadTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-compass');
+    grunt.loadNpmTasks('grunt-autoprefixer');
+    grunt.loadNpmTasks('grunt-contrib-watch');
 };
