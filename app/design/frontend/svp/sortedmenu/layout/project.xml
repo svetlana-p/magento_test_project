@@ -3,6 +3,7 @@
     <default>
         <reference name="head">
             <action method="addItem"><type>skin_css</type><name>css/styles.css</name><params/><if><![CDATA[<!--[if (gte IE 9) | (IEMobile)]><!-->]]></if></action>
+            <action method="addItem"><type>skin_js</type><name>js/magento-updates.js</name></action>
         </reference>
     </default>
 </layout>

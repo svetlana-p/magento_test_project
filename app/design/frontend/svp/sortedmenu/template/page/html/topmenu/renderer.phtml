@@ -46,7 +46,7 @@ if($childLevel) {
     $children = $sortedChildren;
 }
 
-$firstLetter = "";
+$firstLetter = '';
 foreach ($children as $key => $child) {
     $child->setLevel($childLevel);
     $child->setIsFirst($counter == 1);
@@ -56,14 +56,13 @@ foreach ($children as $key => $child) {
     $outermostClassCode = 'level'. $childLevel;
     $_hasChildren = ($child->hasChildren()) ? 'has-children' : '';
 
-    if($childLevel) {
-        $childFirstLetter = substr($key,0,1);
-        if($firstLetter != $childFirstLetter){
-            $firstLetter = $childFirstLetter;
-            $html .= '<li '. $this->_getRenderedMenuItemAttributes($child) .'>';
-            $html .=    '<span>' . $firstLetter . '</span>';
-            $html .= '</li>';
-        }
+    $childFirstLetter = substr($key,0,1);
+    if($childLevel && ($firstLetter != $childFirstLetter)) {
+        if($firstLetter != '') $html .= '</ul></li>';
+        $firstLetter = $childFirstLetter;
+        $html .= '<li class="level1-group">';
+        $html .=     '<span class="nav-title">' . $firstLetter . '</span>';
+        $html .= '<ul class="level1-items">';
     }
 
     $html .= '<li '. $this->_getRenderedMenuItemAttributes($child) .'>';
@@ -79,7 +78,7 @@ foreach ($children as $key => $child) {
     if (!empty($_hasChildren)) {
         $html .= '<ul class="level'. $childLevel .'">';
         $html .=     $this->render($child, $childrenWrapClass);
-        $html .= '</ul>';
+        $html .= '</ul></li></ul>';
     }
 
     if (!empty($childrenWrapClass)) {

@@ -12,12 +12,9 @@ module.exports = function (grunt) {
                 files: ['skin/frontend/svp/sortedmenu/scss/**/*.scss'], // which files to watch
                 tasks: ['compass']
             },
-            // Listening files to reload resource (for static resources like css/images/js) or whole page
-            reload: {
+            autoprefixer: {
                 files: ['skin/frontend/svp/sortedmenu/css/styles.css'],
-                options: {
-                    livereload: true
-                }
+                tasks: ['autoprefixer']
             }
         },
         autoprefixer: {
