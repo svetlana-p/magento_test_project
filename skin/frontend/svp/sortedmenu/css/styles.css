@@ -942,7 +942,7 @@ a.skip-link { text-decoration: none; }
 /* ============================================ * Nav - Skip Content ============================================ */
 @media only screen and (max-width: 770px) { #header-nav { padding: 5px 0; } }
 @media only screen and (min-width: 771px) { #header-nav { display: block; /* Force visibility */ border-bottom: 1px solid #EDEDED; }
-  .page-header { position: relative; z-index: 101; } }
+  .page-header { position: relative; z-index: 111; } }
 /* ============================================ * Nav Primary ============================================ */
 @media only screen and (min-width: 771px) { .nav-primary { display: block; margin-top: 15px; } }
 /* ============================================ * General Navigation Styles ============================================ */
